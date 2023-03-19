@@ -7,6 +7,7 @@ public class Main {
     task3();
     task4();
     task5();
+    task6();
     }
 
     public static int[] generateRandomArray() {
@@ -94,5 +95,15 @@ public class Main {
             }
         }
         System.out.println("Минимальная сумма трат за день составида " + min + " рублей. Максимальнпя сумма трат за день составила " + max + " рублей.");
+        System.out.println();
+    }
+
+    public static void task6 () {
+        System.out.println("Задача 4.1 исправление");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+        System.out.println();
     }
 }
