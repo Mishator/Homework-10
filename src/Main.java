@@ -1,7 +1,10 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
     task1();
     task2();
+    task3();
     }
 
     public static int[] generateRandomArray() {
@@ -42,6 +45,19 @@ public class Main {
             }
         }
         System.out.println("Минимальная сумма трат за день составвила " + min + " рублей.");
+        System.out.println();
+    }
+
+    public static void task3 () {
+        System.out.println("Задача 3");
+        int[ ] arrSalary = generateRandomArray();
+        System.out.println(Arrays.toString(arrSalary));
+        double avgSalary = 0;
+        for (int i = 0; i < arrSalary.length; i++) {
+            avgSalary += (double) arrSalary[i] / arrSalary.length;
+        }
+        System.out.println("Средняя сумма трат за месяц составила " + avgSalary + " рублей.");
+        System.out.printf("Средняя сумма трат за месяц составила %.2f рублей", avgSalary);
         System.out.println();
     }
 }
