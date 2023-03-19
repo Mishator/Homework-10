@@ -6,6 +6,7 @@ public class Main {
     task2();
     task3();
     task4();
+    task5();
     }
 
     public static int[] generateRandomArray() {
@@ -73,5 +74,25 @@ public class Main {
             reverseFullName[reverseFullName.length - i - 1] = temp;
         }
         System.out.println(new String(reverseFullName));
+        System.out.println();
+    }
+
+    public static void task5 () {
+        System.out.println("Задача 2.1 исправление");
+        int[ ] arr = generateRandomArray();
+        System.out.println(Arrays.toString(arr));
+
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
+        for (int salary : arr) {
+            if (salary > max) {
+                max = salary;
+            }
+            if (salary < min) {
+                min = salary;
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составида " + min + " рублей. Максимальнпя сумма трат за день составила " + max + " рублей.");
     }
 }
